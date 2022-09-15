@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+        <title>Menu</title>
+    </head>
+
+    <body>
+        <nav id="navbar">
+            <div class="logo-img"><a href="home.html"><img src="images/NOT_STARBUCKS_BG.png" alt="Starbucks-logo"></a>
+            </div>
+            <ul>
+                <li><a href="#" id="menu-btn">MENU</a></li>
+                <li><a href="#">REWARDS</a></li>
+                <li><a href="#">GIFT CARDS</a></li>
+            </ul>
+            <div class="cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="count">0</span></div>
+        </nav>
+
+        <div class="bg-img">
+
+            <div class="menuWrapper">
+                <h1>Menu</h1>
+                <div class="filter-consumables">
+                    <div class="filter active">Beverages</div>
+                    <div class="filter">Food</div>
+                </div>
+                <!-- Beverage Items -->
+                <div class="menu-items beverage active"></div>
+                <!-- Food Items -->
+                <div class="menu-items food"></div>
+            </div>
+            <!-- View Cart -->
+            <div class="overlay-bg">
+                <div class="view-cart">
+                    <div class="top">
+                        <h3>Your Order</h3>
+                        <small id="btn-close"><i class="fa-solid fa-xmark"></i></small>
+                    </div>
+                    <div class="orders"></div>
+                    <button class="checkout-btn">Checkout</button>
+                </div>
+            </div>
+        </div>
+        
+             <!-- View Checkout -->
+             <div class="checkout-bg">
+                <div class="view-checkout">
+                    <div class="top">
+                        <h3>Order Receipt</h3>
+                        <small id="check-close"><i class="fa-solid fa-xmark"></i></small>
+                    </div>
+                    <div class="receipts"></div>
+                </div>
+            </div>
+        </div>
+            </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"
+            integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="script.js"></script>
+        <!-- Footer -->
+        <div class="footer">
+            <div class="social-networks">
+                <span class="icon"><i class="fab fa-instagram"></i></span>
+                <span class="icon"><i class="fab fa-twitter"></i></span>
+                <span class="icon"><i class="fab fa-facebook"></i></span>
+            </div>
+            <div class="credits-area">
+                <small>&#169; 2022 All rights Reserved</small>
+            </div>
+        </div>
+    </body>
+
+</html>
